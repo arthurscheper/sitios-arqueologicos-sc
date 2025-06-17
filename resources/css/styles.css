@@ -1,0 +1,43 @@
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #2d3748;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+.animate-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-visible {
+    transform: translateY(0); 
+    transition: transform 0.3s ease-out; 
+}
+
+@media (min-width: 768px) { 
+    .navbar-hidden {
+        transform: translateY(0) !important;
+    }
+}
