@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadSection('inicio-container', 'sections/inicio.html');
     loadSection('introducao-container', 'sections/introducao.html');
     loadSection('tubarao-container', 'sections/tubarao.html');
+    loadSection('congonhas-i-container', 'sections/congonhas-i.html');
     loadSection('congonhas-iii-container', 'sections/congonhas.html');
     loadSection('sambaquis-container', 'sections/sambaquis.html');
     loadSection('pre-historia-container', 'sections/pre-historia.html');
