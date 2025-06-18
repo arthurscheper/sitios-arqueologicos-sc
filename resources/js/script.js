@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadSection('pre-historia-container', 'sections/pre-historia.html');
     loadSection('ferramentas-cotidiano-container', 'sections/ferramentas-cotidiano.html');
     loadSection('arte-rupestre-container', 'sections/arte-rupestre.html');
+    loadSection('zoolitos-container', 'sections/zoolitos.html');
     loadSection('referencias-container', 'sections/referencias.html');
     loadSection('footer-container', 'sections/footer.html'); 
 
