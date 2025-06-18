@@ -7,10 +7,58 @@
         <p class="mb-6 text-lg md:text-xl text-gray-700">Santa Catarina é rica em sítios com arte rupestre, que são registros visuais deixados por populações pré-históricas em superfícies rochosas.</p>
         <p class="mb-6 text-lg md:text-xl text-gray-700">Essas pinturas e gravuras, muitas vezes encontradas em abrigos rochosos e cavernas, representam animais, figuras humanas, símbolos geométricos e cenas do cotidiano.</p>
 
-        <img src="resources/img/arte-rupestre/arte-rupestre2.jpg"
-             alt="[Image of Pinturas Rupestres]"
-             class="w-full h-auto rounded-xl shadow-lg mb-6 object-cover transform transition-transform duration-500 hover:scale-105">
-        <p class="text-sm text-gray-500 italic mb-6">Fonte da imagem: Prefeitura Municipal de Urubici e Ludmila Saharovsky.</p>
+        <div class="carousel-container" id="arteRupestreCarousel">
+            <div class="carousel-slide fade">
+                <img src="resources/img/arte-rupestre/arte-rupestre2.jpg"
+                    alt="[Imagem de Pinturas Rupestres]"
+                    class="rounded-xl shadow-lg mb-6">
+
+                <div class="carousel-caption text-sm text-gray-500 italic mb-6">
+                    Fonte da imagem: Prefeitura Municipal de Urubici e Ludmila Saharovsky.
+                </div>
+            </div>
+
+            <div class="carousel-slide fade">
+                <img src="resources/img/arte-rupestre/arte-rupestre3.jpg"
+                    alt="[Imagem de Pinturas Rupestres]"
+                    class="rounded-xl shadow-lg mb-6">
+
+                <div class="carousel-caption text-sm text-gray-500 italic mb-6">
+                    Fonte da imagem: <a href="https://museu.ufsc.br/marque-virtual/representacoes-rupestres/" target="_blank" class="text-blue-600 hover:underline hover:text-blue-400 transition duration-300 break-words">https://museu.ufsc.br/marque-virtual/representacoes-rupestres/</a>.
+                </div>
+            </div>
+
+            <div class="carousel-slide fade">
+                <img src="resources/img/arte-rupestre/arte-rupestre4.jpg"
+                    alt="[Imagem de Pinturas Rupestres]"
+                    class="rounded-xl shadow-lg mb-6">
+
+                <div class="carousel-caption text-sm text-gray-500 italic mb-6">
+                    Fonte da imagem: <a href="https://museu.ufsc.br/marque-virtual/representacoes-rupestres/" target="_blank" class="text-blue-600 hover:underline hover:text-blue-400 transition duration-300 break-words">https://museu.ufsc.br/marque-virtual/representacoes-rupestres/</a>.
+                </div>
+            </div>
+
+            <div class="carousel-slide fade">
+                <img src="resources/img/arte-rupestre/arte-rupestre5.jpg"
+                    alt="[Imagem de Pinturas Rupestres]"
+                    class="rounded-xl shadow-lg mb-6">
+
+                <div class="carousel-caption text-sm text-gray-500 italic mb-6">
+                    Fonte da imagem: <a href="https://www.nsctotal.com.br/noticias/fotos-como-visitar-as-principais-inscricoes-rupestres-na-ilha-de-santa-catarina" target="_blank" class="text-blue-600 hover:underline hover:text-blue-400 transition duration-300 break-words">https://www.nsctotal.com.br/noticias/fotos-como-visitar-as-principais-inscricoes-rupestres-na-ilha-de-santa-catarina</a>.
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'arteRupestreCarousel')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'arteRupestreCarousel')">&#10095;</a>
+
+            <div style="text-align:center" class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1, 'arteRupestreCarousel')"></span>
+                <span class="dot" onclick="currentSlide(2, 'arteRupestreCarousel')"></span>
+                <span class="dot" onclick="currentSlide(3, 'arteRupestreCarousel')"></span>
+                <span class="dot" onclick="currentSlide(4, 'arteRupestreCarousel')"></span>
+            </div>
+        </div>
+
         <p class="text-lg md:text-xl text-gray-700">Elas fornecem pistas valiosas sobre a cosmologia, rituais e a forma como esses povos percebiam o mundo ao seu redor.</p>
     </section>
 </div>

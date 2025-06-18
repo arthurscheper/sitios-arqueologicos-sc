@@ -4,10 +4,47 @@
         <p class="mb-6 text-lg md:text-xl text-gray-700">Os arqueólogos estudam as ferramentas e utensílios encontrados em sítios arqueológicos para entender o dia a dia das populações pré-históricas.</p>
         <p class="mb-6 text-lg md:text-xl text-gray-700">Artefatos como pontas de flecha, raspadores, pilões e cerâmicas revelam como essas comunidades caçavam, pescavam, coletavam alimentos e preparavam suas refeições.</p>
 
-        <img src="resources/img/ferramentas.webp"
-             alt="[Image of Ferramentas Primitivas]"
-             class="w-full h-auto rounded-xl shadow-lg mb-6 object-cover transform transition-transform duration-500 hover:scale-105">
-        <p class="text-sm text-gray-500 italic mb-6">Fonte da imagem: <a href="https://arqueologiaeprehistoria.com" target="_blank" class="text-blue-600 hover:underline hover:text-blue-400 transition duration-300 break-words">https://arqueologiaeprehistoria.com</a>.</p>
+        <div class="carousel-container" id="ferramentasCarousel">
+            <div class="carousel-slide fade">
+                <img src="resources/img/ferramentas/ferramentas1.webp"
+                    alt="[Imagem de Ferramentas Primitivas]"
+                    class="rounded-xl shadow-lg mb-6">
+
+                <div class="carousel-caption text-sm text-gray-500 italic mb-6">
+                    Fonte da imagem: <a href="https://arqueologiaeprehistoria.com" target="_blank" class="text-blue-600 hover:underline hover:text-blue-400 transition duration-300 break-words">https://arqueologiaeprehistoria.com</a>.
+                </div>
+            </div>
+
+            <div class="carousel-slide fade">
+                <img src="resources/img/ferramentas/ferramentas2.webp"
+                    alt="[Imagem de Ferramentas Primitivas]"
+                    class="rounded-xl shadow-lg mb-6">
+
+                <div class="carousel-caption text-sm text-gray-500 italic mb-6">
+                    Fonte da imagem: <a href="https://mundoeducacao.uol.com.br/historiageral/as-ferramentas-na-pre-historia.htm" target="_blank" class="text-blue-600 hover:underline hover:text-blue-400 transition duration-300 break-words">https://mundoeducacao.uol.com.br/historiageral/as-ferramentas-na-pre-historia.htm</a>.
+                </div>
+            </div>
+
+            <div class="carousel-slide fade">
+                <img src="resources/img/ferramentas/ferramentas3.jpg"
+                    alt="[Imagem de Ferramentas Primitivas]"
+                    class="rounded-xl shadow-lg mb-6">
+
+                <div class="carousel-caption text-sm text-gray-500 italic mb-6">
+                    Fonte da imagem: <a href="https://aventurasnahistoria.com.br/noticias/historia-hoje/ferramentas-de-pedra-revelam-presenca-humana-ha-18-mil-anos-em-ilha-na-indonesia.phtml" target="_blank" class="text-blue-600 hover:underline hover:text-blue-400 transition duration-300 break-words">https://aventurasnahistoria.com.br/noticias/historia-hoje/ferramentas-de-pedra-revelam-presenca-humana-ha-18-mil-anos-em-ilha-na-indonesia.phtml</a>.
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'ferramentasCarousel')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'ferramentasCarousel')">&#10095;</a>
+
+            <div style="text-align:center" class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1, 'ferramentasCarousel')"></span>
+                <span class="dot" onclick="currentSlide(2, 'ferramentasCarousel')"></span>
+                <span class="dot" onclick="currentSlide(3, 'ferramentasCarousel')"></span>
+            </div>
+        </div>
+        
         <p class="text-lg md:text-xl text-gray-700">A análise desses objetos nos permite reconstruir hábitos alimentares, técnicas de produção e até mesmo aspectos sociais e culturais dessas antigas civilizações.</p>
     </div>
 </section>

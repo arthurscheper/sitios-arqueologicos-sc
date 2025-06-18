@@ -7,6 +7,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             const html = await response.text();
             document.getElementById(containerId).innerHTML = html;
+
+            const loadedContainer = document.getElementById(containerId);
+            const carouselsInSection = loadedContainer.querySelectorAll('.carousel-container');
+            
+            carouselsInSection.forEach(carousel => {
+                const carouselId = carousel.id;
+                if (carouselId) {
+                    if (typeof slideIndex === 'undefined' || slideIndex[carouselId] === undefined) {
+                        if (typeof slideIndex === 'undefined') {
+                            console.warn("slideIndex not found. Ensure carousel.js is loaded correctly and defines slideIndex globally or in a way accessible here.");
+                            window.slideIndex = window.slideIndex || {};
+                        }
+                        slideIndex[carouselId] = 1; 
+                    }
+
+                    if (typeof showSlides === 'function') {
+                        showSlides(1, carouselId);
+                    } else {
+                        console.error("showSlides function not found. Ensure carousel.js is loaded correctly.");
+                    }
+                }
+            });
+
             const loadedSection = document.getElementById(containerId).querySelector('.animate-section');
             if (loadedSection) {
                 observer.observe(loadedSection);
